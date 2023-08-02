@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head id="mainHead">
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iframes</title>
+</head>
+<body>
+<!-- <body
+	style="background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&w=1000&q=80'); background-size: cover; background-repeat: no-repeat; background-position: center"> -->
+	<!-- -->
+	<script>
+		//document.cookie="visitorID=de08a6e15a54c2525c445a9518f427f5";
+		// document.cookie="visitorID=specific.GauRgzDk!ZgmCkQWxmoRA";
+		document.cookie="visitorID=GauRgzDk!ZgmCkQWxmoBB";
+		document.cookie="jwt2=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWprYW1hbHJhanU0MUBnbWFpbC5jb20iLCJpYXQiOjE2NjAyMDM4MDAsIm5iZiI6MTY2MDIwMzgwMCwianRpIjoiYzFiMzNiZmItNDY1YS00OTVmLTlhOWMtYWFhNTY3ZmI4ZTZkIiwiZXhwIjoxNjYwMjA0NzYwLCJ0eXBlIjoiYWNjZXNzIiwiZnJlc2giOmZhbHNlLCJuYW1lIjoiUmFqa2FtYWwgQiBHb3dkYSIsInJvbGUiOiJTdXBlckFkbWluIiwid3MiOiI4M2I0ZGVjZTIwNjU0OWMwOWM0NzY0NjlmMDhlNjNhMCJ9.nrOYP6wWs61ZMBpjZs49sFuyAm79tU8fToXZCr0Y6CY";
+
+        var chatSocket = new WebSocket('ws://192.168.1.184/ws/user/');
+        //var chatSocket = new WebSocket('ws://192.168.1.184/ws/agent/');
+        chatSocket.onopen = function(e) {
+			// chatSocket.send(JSON.stringify({'type': 'register_bot','bot_id': "1"}));	 	 	
+            chatSocket.send(JSON.stringify({'type':'chat_message', 'message':'kja dahsjkdashd'}));
+	};
+	</script>
+	<!-- 
+	<script>
+		var script = document.createElement('script');
+		script.type = "text/javascript";
+		var bot_id = 7;
+		var app_id = 'e7f7dfb507a440dd98499900f28e947a';
+		var baseURL = 'http://192.168.1.42:8080/Chatbot-UI/Testing/chui4.01';
+		// var apiURL = 'https://call2transact.com'; /
+		script.src = baseURL + '/static/api/chatbot.js';
+		var head = document.getElementsByTagName('head')[0];
+		head.appendChild(script);
+	</script>
+	-->
+</body>
+</html>

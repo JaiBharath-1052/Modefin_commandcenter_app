@@ -1,0 +1,181 @@
+{
+"custom_button": {"type" : "botMessage",
+                  "data": {
+					"message": "Custom Message Type",
+					"messageTime": 1234,
+					"metadata": {
+						"contentType": "300",
+						"templateId": "6",
+						"payload": [
+										{
+											"title": "Example 1",
+											"message": "Message for Example 1."
+										},
+										{
+											"title": "Example 1",
+											"message": "Message for Example 2"
+										},
+										{
+											"title": "Example for a long button",
+											"message": "Message for long button"
+										}
+								   ]
+								}
+						}
+				},
+
+"custom_button2": {"type" : "botMessage",
+                   "data": {
+					"message": "Custom Message Type",
+					"messageTime": 1234,
+					"metadata": {
+									"contentType": "300",
+									"templateId": "6",
+									"payload": [{
+										"title": "Yes",
+										"message": "Cool! send me more."
+									}, {
+										"title": "No",
+										"message": "Not at all"
+									}]
+								}
+						}
+				},
+
+"custom_link": {"type" : "botMessage",
+                  "data": {
+					"message": "Custom Message Type",
+					"messageTime": 1234,
+					"metadata": {
+									"contentType": "300",
+									"templateId": "3",
+									"payload": [{
+											"type": "link",
+											"url": "https://www.google.com",
+											"name": "Go To Google"
+										},
+										{
+											"type": "link",
+											"url": "https://www.facebook.com",
+											"name": "Go To Facebook",
+											"openLinkInNewTab": false
+										}
+									]
+								}	
+						}
+				},
+
+"custom_Sbutton": {"type" : "botMessage",
+                  "data": {
+					"message": "Custom Message Type",
+					"messageTime": 1234,
+					"metadata": {
+								"contentType": "300",
+								"templateId": "4",
+								"payload": [{
+									"name": "Pay",
+									"replyText":"optional, will be used as acknowledgement message to user in case of requestType JSON. Default value is same as name parameter"
+								}],
+								"formData": {
+									"amount": "1000",
+									"description": "movie ticket"
+								},
+								"formAction": "https://example.com/book",
+								"requestType":"json"
+							}	
+						}
+				},
+
+"custom_form": {"type" : "botMessage",
+                  "data": {
+					"message": "Custom Message Type",
+					"messageTime": 1234,
+					  "metadata": {
+									"contentType": "300",
+									"templateId": "12",
+									"payload": [
+									  {
+										"type": "text",
+										"data": {
+										  "label": "Name",
+										  "placeholder": "Enter your name"
+										}
+									  },
+									  {
+										"type": "password",
+										"data": {
+										  "label": "Password",
+										  "placeholder": "Enter your password"
+										}
+									  },
+									  {
+										"type": "hidden",
+										"data": {
+										  "name": "userDetail",
+										  "value": "some_secret_detail"
+										}
+									  },
+									  {
+										"type": "radio",
+										"data" : {
+										  "title": "What do you identify as:",
+										  "name": "Gender",
+										  "options": [
+										  {
+											"label": "Male",
+											"value": "male"
+										  },
+										  {
+											"label": "Female",
+											"value": "female"
+										  },
+										  {
+											"label": "Other",
+											"value": "other"
+										  }
+										]
+										}
+									  },
+									  {
+										"type": "checkbox",
+										"data": {
+										  "title": "Choose your Music Type:",
+										  "name": "music_type",
+										  "options": [
+										  {
+											"label": "Metal",
+											"value": "metal"
+										  },
+										  {
+											"label": "Pop",
+											"value": "pop"
+										  },
+										  {
+											"label": "Blues",
+											"value": "blues"
+										  },
+										  {
+											"label": "Folk",
+											"value": "folk"
+										  }
+										]
+										}
+									  },
+									  {
+										"type": "submit",
+										"data": {
+										  "action":{
+											"message": "optional- this message will be used as acknowledgement text when user clicks the button",
+										"postFormDataAsMessage": "true",
+											"requestType": "json",
+											"formAction": "<URL>"
+										  },
+										  "type": "submit",
+										  "name": "Submit"
+										}
+									  }
+									]
+								  }	
+						}
+				}
+}
